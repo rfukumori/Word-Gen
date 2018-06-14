@@ -1,4 +1,4 @@
-\\@Riku Fukumori
+//@Riku Fukumori
 
 import structure5.*;
 import java.util.Random;
@@ -13,18 +13,18 @@ public class Table {
     public Table(){
         table = new Vector(1000);
     }
-    
+
     //method which sets k to be called in WordGen class
     public int setK( int n){
         this.k = n;
         return k;
     }
-    
+
     //method which adds a k letter string to the table vector
     void add(String str){
         Vector table = this.table;
         boolean found = false;
-	//if the k letter string is found in the text, update the frequency list 
+	//if the k letter string is found in the text, update the frequency list
         for( int i = 0 ; i < table.size() ; i++ ) {
             Association letters = (Association) table.get(i);
             String characters = (String) letters.getKey();
@@ -42,7 +42,7 @@ public class Table {
             table.add(new Association(str.substring(0,k), fList ));
         }
     }
-    
+
     //finds frequency list and picks a random letter using the frequency list class's pickNext method
     String pickNext(String str) {
         boolean found = false;
@@ -58,14 +58,14 @@ public class Table {
                 break;
             }
         }
-	//if the string is at the end of the text, then this picks a random two letter string from the table 
+	//if the string is at the end of the text, then this picks a random two letter string from the table
 	if (!found){
 	    Association letters = (Association) table.get(r.nextInt(table.size() ));
 	    letter = (String) letters.getKey();
 	}
-		
+
         return letter;
-  
+
     }
 
     //picks a random k letter string from the table to serve which is called by WordGen to start the generated text

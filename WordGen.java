@@ -1,4 +1,4 @@
-\\@Riku Fukumori
+//@Riku Fukumori
 
 import java.util.Scanner;
 
@@ -24,7 +24,7 @@ public class WordGen {
             Table table = new Table();
 	    //sets user inputted k to new k value using setK method from Table
             table.setK(k);
-	    
+
 	    //feed text into the table using the add method from Table class
             for ( int i = 0 ; i < text.length()-k ; i++) {
                 table.add(text.substring(i , i+k+1 ));
