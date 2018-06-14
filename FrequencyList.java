@@ -1,4 +1,4 @@
-//Fiona Yonkman Lab2 FrequencyListClass
+//@Riku Fukumori
 
 import structure5.*;
 import java.util.Random;

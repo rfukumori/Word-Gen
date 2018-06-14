@@ -1,3 +1,5 @@
+\\@Riku Fukumori
+
 import java.util.Scanner;
 
 //Main class which takes in a string of text and generates a text of that style

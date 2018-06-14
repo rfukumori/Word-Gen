@@ -1,3 +1,5 @@
+\\@Riku Fukumori
+
 import structure5.*;
 import java.util.Random;
 
